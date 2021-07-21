@@ -10,13 +10,11 @@ getItems() {
 addItem(item){
     this.items.push(item)
 }
-removeItem(item){
-    const checkItem = this.items.indexOf(item);
-    if(checkItem > 0){
-        this.items.push(item)
-    }
+removeItem(item) {
+    this.items.splice(this.items.indexOf(item), 1);
+  }
 }
-}
+
 
 
 const storage = new Storage([
